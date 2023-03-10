@@ -2,7 +2,7 @@ version: "3.9"
 services:
 
   workspace-register:
-    image: workspace-register
+    image: harbor.stfc.ac.uk/ada-platform/workspace-register
     restart: always
     volumes:
       - type: bind
@@ -10,7 +10,7 @@ services:
         target: /config
 
   admin-panel:
-    image: admin-panel
+    image: harbor.stfc.ac.uk/ada-platform/admin-panel
     ports:
       - 8001:81
     restart: always
