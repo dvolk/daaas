@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /home/dv/stuff/code/config/workspace-register
+        source: ./config/workspace-register
         target: /config
 
   admin-panel:
@@ -16,6 +16,6 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /home/dv/stuff/code/config/admin-panel
+        source: ./config/admin-panel
         target: /config
 
