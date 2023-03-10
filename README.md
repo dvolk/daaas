@@ -2,7 +2,7 @@ This readme details how to deploy the daaas platform with docker
 
 ## Configuration
 
-Gather the following configuration files and put them into the proscribed structure
+Gather the daaas configuration files and put them into the following structure
 
 ```
 config/
