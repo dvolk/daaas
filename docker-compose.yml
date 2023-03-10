@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+
+  workspace-register:
+    image: workspace-register
+    restart: always
+    volumes:
+      - type: bind
+        source: /home/dv/stuff/code/config/workspace-register
+        target: /config
+
+  admin-panel:
+    image: admin-panel
+    ports:
+      - 8001:81
+    restart: always
+    volumes:
+      - type: bind
+        source: /home/dv/stuff/code/config/admin-panel
+        target: /config
+
